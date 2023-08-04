@@ -1,96 +1,94 @@
-# Proyecto Laravel API Backend
+# Laravel API Backend Project
 
-Este es el backend de una API basada en Laravel que proporciona servicios para un sistema de gestión de tareas (TODOs). La API permite a los usuarios registrarse, iniciar sesión, administrar sus tareas y realizar diversas operaciones CRUD en la entidad "Todo".
+This is the backend of a Laravel-based API that provides services for a Todo management system. The API allows users to register, log in, manage their todos, and perform various CRUD operations on the "Todo" entity.
 
-## Requisitos
+## Requirements
 
-Antes de ejecutar la API, asegúrate de tener instalados los siguientes requisitos:
+Before running the API, make sure you have the following requirements installed:
 
 - PHP >= 7.3
 - Composer (https://getcomposer.org/)
 - Laravel >= 8.x (https://laravel.com/)
-- Base de datos compatible con Laravel (por ejemplo, MySQL, PostgreSQL, SQLite, etc.)
+- Database compatible with Laravel (e.g., MySQL, PostgreSQL, SQLite, etc.)
 
-## Instalación
+## Installation
 
-Sigue los siguientes pasos para instalar y configurar el proyecto:
+Follow these steps to install and set up the project:
 
-1. Clona el repositorio desde GitHub.
-
-```bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
-```
-
-2. Navega al directorio del proyecto.
+1. Clone the repository from GitHub.
 
 ```bash
-cd nombre_del_proyecto
+git clone https://github.com/your_username/your_repository.git
 ```
 
-3. Instala las dependencias del proyecto a través de Composer.
+2. Navigate to the project directory.
+
+```bash
+cd project_name
+```
+
+3. Install project dependencies via Composer.
 
 ```bash
 composer install
 ```
 
-4. Copia el archivo `.env.example` y renómbralo a `.env`. Luego, configura los detalles de tu base de datos en el archivo `.env`.
+4. Copy the `.env.example` file and rename it to `.env`. Then, configure your database details in the `.env` file.
 
 ```bash
 cp .env.example .env
 ```
 
-5. Genera una clave de aplicación para el proyecto.
+5. Generate an application key for the project.
 
 ```bash
 php artisan key:generate
 ```
 
-6. Ejecuta las migraciones para crear las tablas necesarias en la base de datos.
+6. Run the migrations to create the necessary tables in the database.
 
 ```bash
 php artisan migrate
 ```
 
-7. Opcional: Ejecuta los seeders para poblar la base de datos con datos de prueba.
+7. Optional: Run seeders to populate the database with sample data.
 
 ```bash
 php artisan db:seed
 ```
 
-8. Inicia el servidor de desarrollo de Laravel.
+8. Start the Laravel development server.
 
 ```bash
 php artisan serve
 ```
 
-## Uso
+## Usage
 
-Una vez que el servidor está en funcionamiento, puedes acceder a la API en la URL `http://localhost:8000/api/`. Aquí se encuentran las rutas disponibles para registrar usuarios, iniciar sesión, administrar tareas y más.
+Once the server is up and running, you can access the API at `http://localhost:8000/api/`. Here, you will find available routes for user registration, login, todo management, and more.
 
-## Endpoints de la API
+## API Endpoints
 
-### Usuarios
+### Users
 
-- `POST /api/register`: Registrar un nuevo usuario en la aplicación.
-- `POST /api/login`: Iniciar sesión con credenciales de usuario.
-- `GET /api/user-profile`: Obtener el perfil del usuario autenticado.
-- `GET /api/logout`: Cerrar sesión y revocar los tokens de acceso.
+- `POST /api/register`: Register a new user in the application.
+- `POST /api/login`: Log in with user credentials.
+- `GET /api/user-profile`: Get the profile of the authenticated user.
+- `GET /api/logout`: Log out and revoke access tokens.
 
-### Tareas (Todos)
+### Todos
 
-- `GET /api/todo/{id}`: Obtener detalles de una tarea por su ID.
-- `GET /api/todos/{user_id}`: Obtener todas las tareas de un usuario por su ID.
-- `POST /api/todo/{user_id}`: Crear una nueva tarea asociada a un usuario por su ID.
-- `PUT /api/todo/{id}`: Actualizar los detalles de una tarea por su ID.
-- `DELETE /api/todo/{id}`: Eliminar una tarea por su ID.
+- `GET /api/todo/{id}`: Get details of a todo by ID.
+- `GET /api/todos/{user_id}`: Get all todos for a user by ID.
+- `POST /api/todo/{user_id}`: Create a new todo associated with a user by ID.
+- `PUT /api/todo/{id}`: Update details of a todo by ID.
+- `DELETE /api/todo/{id}`: Delete a todo by ID.
 
-## Contribuciones
+## Contributions
 
-Si deseas contribuir al proyecto, siéntete libre de crear un Pull Request con tus mejoras o correcciones.
+If you wish to contribute to the project, feel free to create a Pull Request with your enhancements or fixes.
 
-## Licencia
+## License
 
-Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+This project is distributed under the MIT License. See the `LICENSE` file for more details.
 
----
-Espero que esta información te sea útil. Si tienes alguna pregunta o necesitas más información, no dudes en contactarme. ¡Buena suerte con tu proyecto!
