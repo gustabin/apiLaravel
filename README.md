@@ -92,3 +92,5 @@ If you wish to contribute to the project, feel free to create a Pull Request wit
 
 This project is distributed under the MIT License. See the `LICENSE` file for more details.
 
+---
+I hope this information is helpful to you. If you have any questions or need further information, feel free to contact me. Good luck with your project!
