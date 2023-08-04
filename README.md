@@ -18,7 +18,7 @@ Follow these steps to install and set up the project:
 1. Clone the repository from GitHub.
 
 ```bash
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/gustabin/apiLaravel.git
 ```
 
 2. Navigate to the project directory.
